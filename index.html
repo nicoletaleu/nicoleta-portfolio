@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nicoleta Leu — QA Automation Engineer</title>
+  <meta name="description" content="Nicoleta Leu — QA Engineer. I make sure websites and mobile apps work correctly before customers use them." />
+  <meta property="og:title" content="Nicoleta Leu — QA Automation Engineer" />
+  <meta property="og:description" content="I make sure websites and mobile apps work correctly before customers use them." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230d99ff'/><text x='16' y='22' font-family='Arial' font-size='15' font-weight='700' fill='white' text-anchor='middle'>NL</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=14" />
+</head>
+<body>
+  <!-- ============ TOP BAR ============ -->
+  <header class="topbar">
+    <a class="brand" href="#about">
+      <span class="logo">NL</span>
+      <span class="brand-name">Nicoleta Leu</span>
+    </a>
+
+    <nav class="topnav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#work">My work</a>
+      <a href="#growth">Growth</a>
+      <a href="#process">How I work</a>
+      <a href="#skills">Skills</a>
+    </nav>
+
+    <div class="topbar-right">
+      <button class="icon-btn" id="themeToggle" aria-label="Switch light / dark mode" title="Switch light / dark mode">
+        <svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+      </button>
+      <a class="cta-btn" href="mailto:nicoleta.toma15@gmail.com">Email me</a>
+    </div>
+  </header>
+  <div class="read-progress" aria-hidden="true"><span id="readBar"></span></div>
+
+  <div class="workspace">
+    <!-- ============ LEFT: CONTENTS ============ -->
+    <aside class="panel panel-left" aria-label="Contents">
+      <div class="panel-head">On this page</div>
+      <ul class="layers" id="layers">
+        <li data-target="about"><span class="li-ico">👋</span>About me</li>
+        <li data-target="contact"><span class="li-ico">✉️</span>Contact</li>
+        <li data-target="work"><span class="li-ico">✨</span>Discover my work</li>
+        <li data-target="results"><span class="li-ico">📈</span>In numbers</li>
+        <li data-target="growth"><span class="li-ico">🌱</span>My growth path</li>
+        <li data-target="learning"><span class="li-ico">📚</span>Currently learning</li>
+        <li data-target="process"><span class="li-ico">🧭</span>How I work</li>
+        <li data-target="skills"><span class="li-ico">🧰</span>Skills</li>
+      </ul>
+      <p class="panel-hint">Tip: click any card marked <b>＋</b> to see the full story.</p>
+    </aside>
+
+    <!-- ============ CANVAS ============ -->
+    <main class="canvas" id="canvas">
+      <div class="board">
+
+        <!-- ABOUT -->
+        <section class="frame span-2" id="about">
+          <span class="frame-label">About me</span>
+          <div class="frame-body hero">
+            <div class="hero-text">
+              <div class="hero-id">
+                <div class="avatar-xl" aria-hidden="true">NL</div>
+                <div>
+                  <span class="pill"><span class="dot"></span>Open to new opportunities</span>
+                  <p class="where">📍 Suceava, Romania · 🏠 Remote</p>
+                </div>
+              </div>
+              <h1>Hi, I'm Nicoleta.</h1>
+              <p class="role">QA Engineer — I make sure software works before people use it.</p>
+              <p class="lead">
+                I test websites and mobile apps to catch problems early, so customers
+                get a smooth, reliable experience. I check things by hand, and I also
+                build <strong>automatic tests</strong> that re-check everything every time
+                the product changes.
+              </p>
+              <a class="scroll-hint" href="#work">See what I've built ↓</a>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+              <div class="shape s-circle"></div>
+              <div class="shape s-square"></div>
+              <div class="shape s-tri"></div>
+              <div class="check-card">
+                <div class="cc-title">Before every release</div>
+                <ul>
+                  <li><span class="tick">✓</span>Login works</li>
+                  <li><span class="tick">✓</span>Payments go through</li>
+                  <li><span class="tick">✓</span>App works on iPhone &amp; Android</li>
+                  <li><span class="tick">✓</span>Texts correct in 4 countries</li>
+                </ul>
+                <div class="cc-foot">All checks passed — ready to launch 🚀</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT (right after "about me") -->
+        <section class="frame span-2" id="contact">
+          <span class="frame-label">Contact</span>
+          <div class="frame-body contact">
+            <div class="contact-intro">
+              <h2>Let's talk!</h2>
+              <p>Pick whatever is easiest for you — I usually reply within a day.</p>
+            </div>
+            <div class="contact-grid">
+              <button class="contact-tile" id="copyEmail" data-email="nicoleta.toma15@gmail.com">
+                <span class="ct-ico">✉️</span>
+                <span class="ct-text"><b>Email</b><span>nicoleta.toma15@gmail.com</span></span>
+                <span class="ct-action" id="copyLabel">Copy</span>
+              </button>
+              <a class="contact-tile" href="https://www.linkedin.com/in/nicoleta-leu" target="_blank" rel="noopener">
+                <span class="ct-ico">💼</span>
+                <span class="ct-text"><b>LinkedIn</b><span>in/nicoleta-leu</span></span>
+                <span class="ct-action">Open ↗</span>
+              </a>
+              <a class="contact-tile" href="https://github.com/nicoletaleu" target="_blank" rel="noopener">
+                <span class="ct-ico">💻</span>
+                <span class="ct-text"><b>GitHub</b><span>see my code</span></span>
+                <span class="ct-action">Open ↗</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- DISCOVER MY WORK -->
+        <section class="frame span-2" id="work">
+          <span class="frame-label">Discover my work</span>
+          <div class="frame-body">
+            <div class="section-head">
+              <h2>Discover my work</h2>
+              <p class="sub">Click a card to see what I did and why it mattered.</p>
+            </div>
+            <div class="work-grid">
+              <button class="work-card" data-detail="tests" style="--c:#ffcd29">
+                <span class="wc-ico">🧪</span>
+                <b>Most of a 1,100+ test suite</b>
+                <span class="wc-meta">Test automation · 616 tests</span>
+                <span class="wc-plus" aria-hidden="true">＋</span>
+              </button>
+              <button class="work-card" data-detail="payments" style="--c:#0d99ff">
+                <span class="wc-ico">💳</span>
+                <b>Keeping payments &amp; accounts safe</b>
+                <span class="wc-meta">Payments · 98% pass rate</span>
+                <span class="wc-plus" aria-hidden="true">＋</span>
+              </button>
+              <button class="work-card" data-detail="report" style="--c:#14ae5c">
+                <span class="wc-ico">📊</span>
+                <b>A quality report for the whole team</b>
+                <span class="wc-meta">Reporting · 23 product flows</span>
+                <span class="wc-plus" aria-hidden="true">＋</span>
+              </button>
+              <button class="work-card" data-detail="pipeline" style="--c:#9747ff">
+                <span class="wc-ico">⚙️</span>
+                <b>Tests that run on their own</b>
+                <span class="wc-meta">CI/CD · built from scratch</span>
+                <span class="wc-plus" aria-hidden="true">＋</span>
+              </button>
+              <button class="work-card" data-detail="countries" style="--c:#ff7262">
+                <span class="wc-ico">🌍</span>
+                <b>Testing in 4 countries</b>
+                <span class="wc-meta">Manual testing · RO, ES, US, DE</span>
+                <span class="wc-plus" aria-hidden="true">＋</span>
+              </button>
+              <button class="work-card" data-detail="tools" style="--c:#f24e1e">
+                <span class="wc-ico">🛠️</span>
+                <b>13 tools that make testing faster</b>
+                <span class="wc-meta">Tooling · incl. an AI helper</span>
+                <span class="wc-plus" aria-hidden="true">＋</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- RESULTS -->
+        <section class="frame span-2" id="results">
+          <span class="frame-label">In numbers</span>
+          <div class="frame-body stats">
+            <div class="stat"><b data-count="616">616</b><span>automatic tests written — more than half of a full test suite</span></div>
+            <div class="stat"><b data-count="98" data-suffix="%">98%</b><span>of payment &amp; account checks pass reliably</span></div>
+            <div class="stat"><b data-count="160">160</b><span>problems found and reported to developers</span></div>
+            <div class="stat"><b data-count="4" data-suffix="+">4+</b><span>years working in software</span></div>
+          </div>
+        </section>
+
+        <!-- MY GROWTH PATH -->
+        <section class="frame span-2" id="growth">
+          <span class="frame-label">My growth path</span>
+          <div class="frame-body">
+            <div class="section-head">
+              <h2>My growth path</h2>
+              <p class="sub">How I got here — one step at a time.</p>
+            </div>
+            <ol class="path">
+              <li class="path-step" style="--c:#ffcd29">
+                <span class="ps-year">2020</span>
+                <span class="ps-dot">🌱</span>
+                <b>Discovered testing</b>
+                <span>Learned how software is tested — and loved finding what others miss.</span>
+              </li>
+              <li class="path-step" style="--c:#ff7262">
+                <span class="ps-year">2022</span>
+                <span class="ps-dot">💻</span>
+                <b>Built websites</b>
+                <span>3 years building web pages and checking them on every browser and device.</span>
+              </li>
+              <li class="path-step" style="--c:#9747ff">
+                <span class="ps-year">2025</span>
+                <span class="ps-dot">🤖</span>
+                <b>Moved into automation</b>
+                <span>Started writing automatic tests for websites, APIs and mobile apps.</span>
+              </li>
+              <li class="path-step" style="--c:#14ae5c">
+                <span class="ps-year">2026</span>
+                <span class="ps-dot">✨</span>
+                <b>Testing with AI</b>
+                <span>616 automatic tests written, and an AI helper for testing built.</span>
+              </li>
+              <li class="path-step next">
+                <span class="ps-year">Next</span>
+                <span class="ps-dot">🚀</span>
+                <b>Your team?</b>
+                <a href="#contact">Let's talk →</a>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- CURRENTLY LEARNING -->
+        <section class="frame span-2" id="learning">
+          <span class="frame-label">Currently learning</span>
+          <div class="frame-body">
+            <div class="section-head">
+              <h2>Currently learning</h2>
+              <p class="sub">I never stop growing — here's what I'm working on now.</p>
+            </div>
+            <div class="stage-legend" aria-hidden="true">
+              <span>Learning</span><span>Practising</span><span>Using at work</span>
+            </div>
+            <ul class="learn-list">
+              <li class="learn" data-stage="3">
+                <span class="l-ico">🤖</span>
+                <div class="l-text"><b>AI-assisted testing</b><span>Building AI helpers that speed up testing</span></div>
+                <div class="stages" role="img" aria-label="Stage: using at work"><i></i><i></i><i></i></div>
+                <span class="l-stage">Using at work</span>
+              </li>
+              <li class="learn" data-stage="2">
+                <span class="l-ico">🎭</span>
+                <div class="l-text"><b>Playwright with TypeScript</b><span>Writing modern web tests in TypeScript</span></div>
+                <div class="stages" role="img" aria-label="Stage: practising"><i></i><i></i><i></i></div>
+                <span class="l-stage">Practising</span>
+              </li>
+              <li class="learn" data-stage="1">
+                <span class="l-ico l-code">DE</span>
+                <div class="l-text"><b>German</b><span>Beginner</span></div>
+                <div class="stages" role="img" aria-label="Stage: learning"><i></i><i></i><i></i></div>
+                <span class="l-stage">Learning</span>
+              </li>
+              <li class="learn" data-stage="1">
+                <span class="l-ico l-code">ES</span>
+                <div class="l-text"><b>Spanish</b><span>Beginner</span></div>
+                <div class="stages" role="img" aria-label="Stage: learning"><i></i><i></i><i></i></div>
+                <span class="l-stage">Learning</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- HOW I WORK -->
+        <section class="frame span-2" id="process">
+          <span class="frame-label">How I work</span>
+          <div class="frame-body">
+            <div class="section-head">
+              <h2>How I work</h2>
+              <p class="sub">Click a step to see what happens.</p>
+            </div>
+
+            <div class="flow" role="tablist" aria-label="How I work">
+              <button class="flow-step active" role="tab" aria-selected="true" data-step="0" style="--c:#0d99ff"><span class="fs-num">1</span><span class="fs-ico">🧭</span><b>Understand</b></button>
+              <span class="flow-arrow" aria-hidden="true"></span>
+              <button class="flow-step" role="tab" aria-selected="false" data-step="1" style="--c:#9747ff"><span class="fs-num">2</span><span class="fs-ico">📝</span><b>Plan</b></button>
+              <span class="flow-arrow" aria-hidden="true"></span>
+              <button class="flow-step" role="tab" aria-selected="false" data-step="2" style="--c:#14ae5c"><span class="fs-num">3</span><span class="fs-ico">🧪</span><b>Test &amp; automate</b></button>
+              <span class="flow-arrow" aria-hidden="true"></span>
+              <button class="flow-step" role="tab" aria-selected="false" data-step="3" style="--c:#ff7262"><span class="fs-num">4</span><span class="fs-ico">📣</span><b>Report &amp; follow up</b></button>
+            </div>
+
+            <div class="flow-detail" id="flowDetail" role="tabpanel" aria-live="polite">
+              <h3 id="fdTitle"></h3>
+              <p id="fdText"></p>
+              <div class="chips" id="fdChips"></div>
+            </div>
+          </div>
+        </section>
+        <!-- SKILLS -->
+        <section class="frame span-2" id="skills">
+          <span class="frame-label">Skills</span>
+          <div class="frame-body">
+            <h2>Skills</h2>
+            <div class="skill-grid">
+              <div class="skill-group">
+                <h3>Automatic testing</h3>
+                <p class="explain">Tools that test websites and apps automatically.</p>
+                <div class="chips"><span>Playwright</span><span>Robot Framework</span><span>Appium</span><span>Postman</span></div>
+              </div>
+              <div class="skill-group">
+                <h3>Manual testing</h3>
+                <p class="explain">Checking the product by hand, like a real user.</p>
+                <div class="chips"><span>Exploratory</span><span>Mobile (iOS / Android)</span><span>Different browsers &amp; devices</span><span>Translations</span></div>
+              </div>
+              <div class="skill-group">
+                <h3>AI tools</h3>
+                <p class="explain">Using AI assistants to test faster and smarter.</p>
+                <div class="chips"><span>Claude Code</span><span>AI Agents</span><span>Prompt writing</span></div>
+              </div>
+              <div class="skill-group">
+                <h3>Programming</h3>
+                <p class="explain">Languages I use to write tests and tools.</p>
+                <div class="chips"><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>PHP</span><span>SQL</span></div>
+              </div>
+              <div class="skill-group">
+                <h3>Teamwork &amp; tools</h3>
+                <p class="explain">How I organise work with the team.</p>
+                <div class="chips"><span>Jira</span><span>Confluence</span><span>Agile / Scrum</span><span>GitHub</span></div>
+              </div>
+              <div class="skill-group">
+                <h3>Languages</h3>
+                <p class="explain">Spoken languages.</p>
+                <div class="chips"><span>Romanian — native</span><span>English — professional</span><span>German — beginner</span><span>Spanish — beginner</span></div>
+              </div>
+            </div>
+
+            <details class="more">
+              <summary>Show the full technical list</summary>
+              <dl class="tech-list">
+                <dt>Testing types</dt><dd>Functional, Regression, E2E, API, Integration, Unit, Mobile, Smoke/Sanity, Exploratory, Cross-Browser/Cross-Device, Localization, Negative, Chaos, Database, Usability, UAT support</dd>
+                <dt>Methodology</dt><dd>Test Strategy, Test Plans, Test Cases, Equivalence Partitioning, Boundary Values, Risk-Based Testing, Shift-Left, BDD (Given/When/Then)</dd>
+                <dt>API &amp; services</dt><dd>REST, OAuth 2.0, JSON Schema, Webhooks, Stripe, AWS (S3, SNS)</dd>
+                <dt>CI/CD &amp; tools</dt><dd>GitHub Actions, Git, Makefile, PHPStan, BrowserStack, Chrome DevTools, PHPUnit/Pest, MySQL, HTML, CSS</dd>
+                <dt>AI-assisted QA</dt><dd>Custom Agent Skills, Prompt &amp; Context Engineering, AI-Assisted Test Design, AI Output Validation</dd>
+              </dl>
+            </details>
+          </div>
+        </section>
+
+        <footer class="footer span-2">
+          <span>© Nicoleta Leu</span>
+          <a href="#about">Back to top ↑</a>
+        </footer>
+      </div>
+    </main>
+
+    <!-- ============ RIGHT: AT A GLANCE ============ -->
+    <aside class="panel panel-right" aria-label="At a glance">
+      <div class="panel-head">At a glance</div>
+      <dl class="facts">
+        <dt>⏳ Experience</dt><dd>4+ years in software</dd>
+        <dt>🔍 What I do</dt><dd>Testing websites &amp; mobile apps</dd>
+        <dt>🤖 Specialty</dt><dd>Automatic tests</dd>
+        <dt>🗣️ Speaks</dt><dd>Romanian, English<br><span class="dd-note">German &amp; Spanish (beginner)</span></dd>
+        <dt>📍 Based in</dt><dd>Suceava · works remotely</dd>
+      </dl>
+      <div class="glance-actions">
+        <a class="btn primary block" href="mailto:nicoleta.toma15@gmail.com">Email me</a>
+        <a class="btn block" href="mailto:nicoleta.toma15@gmail.com?subject=CV%20request">Ask for my full CV</a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ============ DETAIL DIALOG ============ -->
+  <dialog class="detail" id="detail" aria-labelledby="dTitle">
+    <div class="d-head">
+      <span class="d-ico" id="dIco"></span>
+      <div>
+        <span class="d-meta" id="dMeta"></span>
+        <h2 id="dTitle"></h2>
+      </div>
+      <button class="d-close" id="dClose" aria-label="Close">✕</button>
+    </div>
+    <div class="d-body">
+      <div class="d-block"><h4>What I did</h4><p id="dDid"></p></div>
+      <div class="d-block"><h4>Why it matters</h4><p id="dWhy"></p></div>
+      <div class="d-result" id="dResult"></div>
+      <div class="d-block"><h4>Tools used</h4><div class="chips" id="dTools"></div></div>
+    </div>
+    <div class="d-foot">
+      <button class="btn" id="dPrev">← Previous</button>
+      <button class="btn primary" id="dNext">Next →</button>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js?v=14"></script>
+</body>
+</html>
